@@ -7,6 +7,7 @@ const hostname: string = "127.0.0.1";
 const port: number = 8081;
 
 server.use(maintRoutes)
+//server.use('/admin',routes) Cria um subgrupo ou para mais grupos de rotas
 
 server.listen(port, function () {
     console.log(
