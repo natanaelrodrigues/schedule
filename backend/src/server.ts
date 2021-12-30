@@ -1,14 +1,12 @@
-import  express, { Response, Request } from 'express';
+import  express from 'express';
+import maintRoutes from './routes/index'
+
 const  server = express();
 
 const hostname: string = "127.0.0.1";
 const port: number = 8081;
 
-server.get("/", (req: Request, res: Response) => {
-    res.setHeader("Content-Type", "application/json");
-    res.statusCode = 200;
-    res.end(JSON.stringify({ Status: "On" }));
-  });
+server.use(maintRoutes)
 
 server.listen(port, function () {
     console.log(
