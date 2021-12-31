@@ -1,10 +1,13 @@
 import  express, { Response, Request } from 'express';
+import path from 'path';
 import maintRoutes from './routes/index'
 
 const  server = express();
 
 const hostname: string = "127.0.0.1";
 const port: number = 8081;
+
+server.use(express.static(path.join(__dirname,'../public')));
 
 server.use(maintRoutes)
 //server.use('/admin',routes) Cria um subgrupo ou para mais grupos de rotas
