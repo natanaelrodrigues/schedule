@@ -1,11 +1,9 @@
 import { Router, Response, Request } from 'express';
 
+import * as homeController from '../controllers/homeController';
+
 const router = Router();
 
-router.get("/", (req: Request, res: Response) => {
-    res.setHeader("Content-Type", "application/json");
-    res.statusCode = 200;
-    res.end(JSON.stringify({ Status: "On" }));
-  });
+router.get("/", homeController.home);
   
 export default router;
