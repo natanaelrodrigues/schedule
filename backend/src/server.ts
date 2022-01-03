@@ -15,7 +15,7 @@ server.use(maintRoutes)
 //server.use('/admin',routes) Cria um subgrupo ou para mais grupos de rotas
 
 server.use((req: Request, res: Response) => {
-  res.status(404).send('<h1>Página não encontrada.</h1>')
+  res.status(404).json({error: 'Endpoint não encontrado.'});
 })
 
 server.listen(process.env.PORT, function () {
