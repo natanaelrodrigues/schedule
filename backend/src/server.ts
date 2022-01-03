@@ -1,11 +1,16 @@
 import  express, { Response, Request } from 'express';
 import path from 'path';
 import dotenv from 'dotenv';
+import cors from 'cors';
 import mainRoutes from './routes/index'
 
 dotenv.config();
 
 const  server = express();
+
+server.use(cors({
+  origin: '*'
+}));
 
 const hostname: string = "127.0.0.1";
 
