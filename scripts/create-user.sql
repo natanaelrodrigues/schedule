@@ -1,4 +1,4 @@
-CREATE TABLE public."user" (
+CREATE TABLE public."users" (
 	id serial NOT NULL,
 	name varchar(200) NOT NULL,
 	email varchar(250) NOT NULL,
