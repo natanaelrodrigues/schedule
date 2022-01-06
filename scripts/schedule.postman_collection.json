@@ -1,0 +1,45 @@
+{
+	"id": "a8682aaa-ebf3-57ce-1cfe-f0451e7bf542",
+	"name": "schedule",
+	"description": "",
+	"order": [
+		"1ad809be-017b-3a19-1e68-0733ef7cb5f6"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1641423348185,
+	"owner": "1071443",
+	"public": false,
+	"requests": [
+		{
+			"id": "1ad809be-017b-3a19-1e68-0733ef7cb5f6",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/users",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1641427548377,
+			"name": "users",
+			"description": "",
+			"collectionId": "a8682aaa-ebf3-57ce-1cfe-f0451e7bf542",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\":\"aa31\",\n\t\"email\":\"arno@teste.com.br\",\n\t\"password\":\"1234\",\n\t\"admin\":0\n}"
+		}
+	]
+}
