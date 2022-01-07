@@ -12,5 +12,11 @@ router.get("/random", apiController.random);
 
 // USER
 router.post("/users",userController.create);
+router.get("/users",userController.list);
+router.get("/user/random",userController.userRandom);
+router.get("/user/:id",userController.get);
+router.put("/user/:id",userController.update);
+router.delete("/user/:id",userController.deleteItem);
+
   
 export default router;
